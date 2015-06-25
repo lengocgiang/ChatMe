@@ -14,6 +14,7 @@
 		519CE27B1B3BBC23007D17E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519CE27A1B3BBC23007D17E9 /* Images.xcassets */; };
 		519CE27E1B3BBC23007D17E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519CE27C1B3BBC23007D17E9 /* LaunchScreen.xib */; };
 		519CE28A1B3BBC23007D17E9 /* chatmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 519CE2891B3BBC23007D17E9 /* chatmeTests.m */; };
+		8A4DEEB5397CCA9DA560CA4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356017868C725CBD565206 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		014EF63902BF94A2DDA38FEB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		519CE26A1B3BBC23007D17E9 /* chatme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		519CE26E1B3BBC23007D17E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		519CE26F1B3BBC23007D17E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		519CE2831B3BBC23007D17E9 /* chatmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		519CE2881B3BBC23007D17E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		519CE2891B3BBC23007D17E9 /* chatmeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatmeTests.m; sourceTree = "<group>"; };
+		7B5C2E905E3FEA68864455DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B0356017868C725CBD565206 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4DEEB5397CCA9DA560CA4E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				519CE26C1B3BBC23007D17E9 /* chatme */,
 				519CE2861B3BBC23007D17E9 /* chatmeTests */,
 				519CE26B1B3BBC23007D17E9 /* Products */,
+				80FA5935FD0F00FAECFFE8E9 /* Pods */,
+				9C6198E13E3B597127F120C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		80FA5935FD0F00FAECFFE8E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C2E905E3FEA68864455DC /* Pods.debug.xcconfig */,
+				014EF63902BF94A2DDA38FEB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C6198E13E3B597127F120C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0356017868C725CBD565206 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 519CE28D1B3BBC23007D17E9 /* Build configuration list for PBXNativeTarget "chatme" */;
 			buildPhases = (
+				95AD3FE41FF818E1781F6AB2 /* Check Pods Manifest.lock */,
 				519CE2661B3BBC23007D17E9 /* Sources */,
 				519CE2671B3BBC23007D17E9 /* Frameworks */,
 				519CE2681B3BBC23007D17E9 /* Resources */,
+				D97CDC249C688390A4C993AF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95AD3FE41FF818E1781F6AB2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D97CDC249C688390A4C993AF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		519CE2661B3BBC23007D17E9 /* Sources */ = {
@@ -347,6 +406,7 @@
 		};
 		519CE28E1B3BBC23007D17E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B5C2E905E3FEA68864455DC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = chatme/Info.plist;
@@ -359,6 +419,7 @@
 		};
 		519CE28F1B3BBC23007D17E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 014EF63902BF94A2DDA38FEB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = chatme/Info.plist;
@@ -422,6 +483,7 @@
 				519CE28F1B3BBC23007D17E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		519CE2901B3BBC23007D17E9 /* Build configuration list for PBXNativeTarget "chatmeTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +492,7 @@
 				519CE2921B3BBC23007D17E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
