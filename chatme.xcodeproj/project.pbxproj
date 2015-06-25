@@ -27,6 +27,10 @@
 		51E1FFC61B3BE6D400B2E169 /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FFC41B3BE6D400B2E169 /* SettingView.m */; };
 		51E1FFC71B3BE6D400B2E169 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1FFC51B3BE6D400B2E169 /* SettingView.xib */; };
 		51E1FFCC1B3BFA3400B2E169 /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FFCB1B3BFA3400B2E169 /* ChatView.m */; };
+		51E1FFD01B3C0A2200B2E169 /* RecentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FFCE1B3C0A2200B2E169 /* RecentCell.m */; };
+		51E1FFD11B3C0A2200B2E169 /* RecentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1FFCF1B3C0A2200B2E169 /* RecentCell.xib */; };
+		51E1FFD31B3C0DD900B2E169 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1FFD21B3C0DD900B2E169 /* ParseUI.framework */; };
+		51E1FFD81B3C0EC900B2E169 /* converted.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FFD71B3C0EC900B2E169 /* converted.m */; };
 		8A4DEEB5397CCA9DA560CA4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356017868C725CBD565206 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +78,12 @@
 		51E1FFC81B3BE7BD00B2E169 /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 		51E1FFCA1B3BFA3400B2E169 /* ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatView.h; sourceTree = "<group>"; };
 		51E1FFCB1B3BFA3400B2E169 /* ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatView.m; sourceTree = "<group>"; };
+		51E1FFCD1B3C0A2200B2E169 /* RecentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentCell.h; sourceTree = "<group>"; };
+		51E1FFCE1B3C0A2200B2E169 /* RecentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentCell.m; sourceTree = "<group>"; };
+		51E1FFCF1B3C0A2200B2E169 /* RecentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentCell.xib; sourceTree = "<group>"; };
+		51E1FFD21B3C0DD900B2E169 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		51E1FFD61B3C0EC900B2E169 /* converted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = converted.h; sourceTree = "<group>"; };
+		51E1FFD71B3C0EC900B2E169 /* converted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = converted.m; sourceTree = "<group>"; };
 		7B5C2E905E3FEA68864455DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B0356017868C725CBD565206 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,6 +95,7 @@
 			files = (
 				51E1FFA71B3BDA7500B2E169 /* Accounts.framework in Frameworks */,
 				51E1FFA51B3BDA6E00B2E169 /* Social.framework in Frameworks */,
+				51E1FFD31B3C0DD900B2E169 /* ParseUI.framework in Frameworks */,
 				51E1FFA31B3BDA5A00B2E169 /* libsqlite3.dylib in Frameworks */,
 				8A4DEEB5397CCA9DA560CA4E /* libPods.a in Frameworks */,
 				51E1FFA11B3BDA2600B2E169 /* Parse.framework in Frameworks */,
@@ -170,6 +181,8 @@
 		51E1FF8D1B3BD88200B2E169 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				51E1FFD41B3C0EB100B2E169 /* backend */,
+				51E1FFD51B3C0EB100B2E169 /* general */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -192,6 +205,7 @@
 		51E1FF9D1B3BDA2600B2E169 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
+				51E1FFD21B3C0DD900B2E169 /* ParseUI.framework */,
 				51E1FF9E1B3BDA2600B2E169 /* Bolts.framework */,
 				51E1FF9F1B3BDA2600B2E169 /* Parse.framework */,
 			);
@@ -215,6 +229,9 @@
 				51E1FFAD1B3BE49700B2E169 /* RecentView.h */,
 				51E1FFAE1B3BE49700B2E169 /* RecentView.m */,
 				51E1FFAF1B3BE49700B2E169 /* RecentView.xib */,
+				51E1FFCD1B3C0A2200B2E169 /* RecentCell.h */,
+				51E1FFCE1B3C0A2200B2E169 /* RecentCell.m */,
+				51E1FFCF1B3C0A2200B2E169 /* RecentCell.xib */,
 			);
 			path = 01_recent;
 			sourceTree = "<group>";
@@ -265,6 +282,22 @@
 				51E1FFCB1B3BFA3400B2E169 /* ChatView.m */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		51E1FFD41B3C0EB100B2E169 /* backend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+		51E1FFD51B3C0EB100B2E169 /* general */ = {
+			isa = PBXGroup;
+			children = (
+				51E1FFD61B3C0EC900B2E169 /* converted.h */,
+				51E1FFD71B3C0EC900B2E169 /* converted.m */,
+			);
+			path = general;
 			sourceTree = "<group>";
 		};
 		80FA5935FD0F00FAECFFE8E9 /* Pods */ = {
@@ -374,6 +407,7 @@
 				519CE27E1B3BBC23007D17E9 /* LaunchScreen.xib in Resources */,
 				519CE27B1B3BBC23007D17E9 /* Images.xcassets in Resources */,
 				51E1FFB11B3BE49700B2E169 /* RecentView.xib in Resources */,
+				51E1FFD11B3C0A2200B2E169 /* RecentCell.xib in Resources */,
 				51E1FFC21B3BE6C700B2E169 /* PeopleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,7 +459,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51E1FFD81B3C0EC900B2E169 /* converted.m in Sources */,
 				51E1FFCC1B3BFA3400B2E169 /* ChatView.m in Sources */,
+				51E1FFD01B3C0A2200B2E169 /* RecentCell.m in Sources */,
 				51E1FFB01B3BE49700B2E169 /* RecentView.m in Sources */,
 				519CE2731B3BBC23007D17E9 /* AppDelegate.m in Sources */,
 				519CE2701B3BBC23007D17E9 /* main.m in Sources */,
