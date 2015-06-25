@@ -9,14 +9,24 @@
 /* Begin PBXBuildFile section */
 		519CE2701B3BBC23007D17E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 519CE26F1B3BBC23007D17E9 /* main.m */; };
 		519CE2731B3BBC23007D17E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 519CE2721B3BBC23007D17E9 /* AppDelegate.m */; };
-		519CE2791B3BBC23007D17E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519CE2771B3BBC23007D17E9 /* Main.storyboard */; };
 		519CE27B1B3BBC23007D17E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519CE27A1B3BBC23007D17E9 /* Images.xcassets */; };
 		519CE27E1B3BBC23007D17E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519CE27C1B3BBC23007D17E9 /* LaunchScreen.xib */; };
 		519CE28A1B3BBC23007D17E9 /* chatmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 519CE2891B3BBC23007D17E9 /* chatmeTests.m */; };
-		51E1FF921B3BD8A500B2E169 /* RecentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FF911B3BD8A500B2E169 /* RecentViewController.m */; };
-		51E1FF951B3BD8AE00B2E169 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FF941B3BD8AE00B2E169 /* SettingsViewController.m */; };
-		51E1FF981B3BD8B600B2E169 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FF971B3BD8B600B2E169 /* GroupViewController.m */; };
-		51E1FF9B1B3BD8C000B2E169 /* PeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FF9A1B3BD8C000B2E169 /* PeopleViewController.m */; };
+		51E1FFA01B3BDA2600B2E169 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1FF9E1B3BDA2600B2E169 /* Bolts.framework */; };
+		51E1FFA11B3BDA2600B2E169 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1FF9F1B3BDA2600B2E169 /* Parse.framework */; };
+		51E1FFA31B3BDA5A00B2E169 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1FFA21B3BDA5A00B2E169 /* libsqlite3.dylib */; };
+		51E1FFA51B3BDA6E00B2E169 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1FFA41B3BDA6E00B2E169 /* Social.framework */; };
+		51E1FFA71B3BDA7500B2E169 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1FFA61B3BDA7500B2E169 /* Accounts.framework */; };
+		51E1FFB01B3BE49700B2E169 /* RecentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FFAE1B3BE49700B2E169 /* RecentView.m */; };
+		51E1FFB11B3BE49700B2E169 /* RecentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1FFAF1B3BE49700B2E169 /* RecentView.xib */; };
+		51E1FFB81B3BE57400B2E169 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FFB71B3BE57400B2E169 /* NavigationController.m */; };
+		51E1FFBC1B3BE6BA00B2E169 /* GroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FFBA1B3BE6BA00B2E169 /* GroupView.m */; };
+		51E1FFBD1B3BE6BA00B2E169 /* GroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1FFBB1B3BE6BA00B2E169 /* GroupView.xib */; };
+		51E1FFC11B3BE6C700B2E169 /* PeopleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FFBF1B3BE6C700B2E169 /* PeopleView.m */; };
+		51E1FFC21B3BE6C700B2E169 /* PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1FFC01B3BE6C700B2E169 /* PeopleView.xib */; };
+		51E1FFC61B3BE6D400B2E169 /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FFC41B3BE6D400B2E169 /* SettingView.m */; };
+		51E1FFC71B3BE6D400B2E169 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1FFC51B3BE6D400B2E169 /* SettingView.xib */; };
+		51E1FFCC1B3BFA3400B2E169 /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FFCB1B3BFA3400B2E169 /* ChatView.m */; };
 		8A4DEEB5397CCA9DA560CA4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356017868C725CBD565206 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,20 +47,33 @@
 		519CE26F1B3BBC23007D17E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		519CE2711B3BBC23007D17E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		519CE2721B3BBC23007D17E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		519CE2781B3BBC23007D17E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		519CE27A1B3BBC23007D17E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		519CE27D1B3BBC23007D17E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		519CE2831B3BBC23007D17E9 /* chatmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		519CE2881B3BBC23007D17E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		519CE2891B3BBC23007D17E9 /* chatmeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatmeTests.m; sourceTree = "<group>"; };
-		51E1FF901B3BD8A500B2E169 /* RecentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentViewController.h; sourceTree = "<group>"; };
-		51E1FF911B3BD8A500B2E169 /* RecentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentViewController.m; sourceTree = "<group>"; };
-		51E1FF931B3BD8AE00B2E169 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		51E1FF941B3BD8AE00B2E169 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		51E1FF961B3BD8B600B2E169 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
-		51E1FF971B3BD8B600B2E169 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
-		51E1FF991B3BD8C000B2E169 /* PeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleViewController.h; sourceTree = "<group>"; };
-		51E1FF9A1B3BD8C000B2E169 /* PeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleViewController.m; sourceTree = "<group>"; };
+		51E1FF9E1B3BDA2600B2E169 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		51E1FF9F1B3BDA2600B2E169 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		51E1FFA21B3BDA5A00B2E169 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		51E1FFA41B3BDA6E00B2E169 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		51E1FFA61B3BDA7500B2E169 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		51E1FFAD1B3BE49700B2E169 /* RecentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentView.h; sourceTree = "<group>"; };
+		51E1FFAE1B3BE49700B2E169 /* RecentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentView.m; sourceTree = "<group>"; };
+		51E1FFAF1B3BE49700B2E169 /* RecentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentView.xib; sourceTree = "<group>"; };
+		51E1FFB61B3BE57400B2E169 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		51E1FFB71B3BE57400B2E169 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		51E1FFB91B3BE6BA00B2E169 /* GroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupView.h; sourceTree = "<group>"; };
+		51E1FFBA1B3BE6BA00B2E169 /* GroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupView.m; sourceTree = "<group>"; };
+		51E1FFBB1B3BE6BA00B2E169 /* GroupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupView.xib; sourceTree = "<group>"; };
+		51E1FFBE1B3BE6C700B2E169 /* PeopleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleView.h; sourceTree = "<group>"; };
+		51E1FFBF1B3BE6C700B2E169 /* PeopleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleView.m; sourceTree = "<group>"; };
+		51E1FFC01B3BE6C700B2E169 /* PeopleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleView.xib; sourceTree = "<group>"; };
+		51E1FFC31B3BE6D400B2E169 /* SettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
+		51E1FFC41B3BE6D400B2E169 /* SettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
+		51E1FFC51B3BE6D400B2E169 /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
+		51E1FFC81B3BE7BD00B2E169 /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
+		51E1FFCA1B3BFA3400B2E169 /* ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatView.h; sourceTree = "<group>"; };
+		51E1FFCB1B3BFA3400B2E169 /* ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatView.m; sourceTree = "<group>"; };
 		7B5C2E905E3FEA68864455DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B0356017868C725CBD565206 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -60,7 +83,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51E1FFA71B3BDA7500B2E169 /* Accounts.framework in Frameworks */,
+				51E1FFA51B3BDA6E00B2E169 /* Social.framework in Frameworks */,
+				51E1FFA31B3BDA5A00B2E169 /* libsqlite3.dylib in Frameworks */,
 				8A4DEEB5397CCA9DA560CA4E /* libPods.a in Frameworks */,
+				51E1FFA11B3BDA2600B2E169 /* Parse.framework in Frameworks */,
+				51E1FFA01B3BDA2600B2E169 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,13 +125,15 @@
 		519CE26C1B3BBC23007D17E9 /* chatme */ = {
 			isa = PBXGroup;
 			children = (
-				51E1FF8C1B3BD88200B2E169 /* Controller */,
+				51E1FFC91B3BF52100B2E169 /* Chat */,
+				51E1FFB51B3BE57400B2E169 /* Application */,
+				51E1FFA81B3BE45200B2E169 /* Tabs */,
 				51E1FF8E1B3BD88200B2E169 /* Modal */,
-				51E1FF8F1B3BD88200B2E169 /* View */,
 				51E1FF8D1B3BD88200B2E169 /* Helper */,
 				519CE2711B3BBC23007D17E9 /* AppDelegate.h */,
 				519CE2721B3BBC23007D17E9 /* AppDelegate.m */,
 				519CE26D1B3BBC23007D17E9 /* Supporting Files */,
+				51E1FFC81B3BE7BD00B2E169 /* AppConstant.h */,
 			);
 			path = chatme;
 			sourceTree = "<group>";
@@ -111,7 +141,7 @@
 		519CE26D1B3BBC23007D17E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				519CE2771B3BBC23007D17E9 /* Main.storyboard */,
+				51E1FF9C1B3BDA2600B2E169 /* Libraries */,
 				519CE27A1B3BBC23007D17E9 /* Images.xcassets */,
 				519CE27C1B3BBC23007D17E9 /* LaunchScreen.xib */,
 				519CE26E1B3BBC23007D17E9 /* Info.plist */,
@@ -137,21 +167,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		51E1FF8C1B3BD88200B2E169 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				51E1FF901B3BD8A500B2E169 /* RecentViewController.h */,
-				51E1FF911B3BD8A500B2E169 /* RecentViewController.m */,
-				51E1FF931B3BD8AE00B2E169 /* SettingsViewController.h */,
-				51E1FF941B3BD8AE00B2E169 /* SettingsViewController.m */,
-				51E1FF961B3BD8B600B2E169 /* GroupViewController.h */,
-				51E1FF971B3BD8B600B2E169 /* GroupViewController.m */,
-				51E1FF991B3BD8C000B2E169 /* PeopleViewController.h */,
-				51E1FF9A1B3BD8C000B2E169 /* PeopleViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		51E1FF8D1B3BD88200B2E169 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,11 +181,90 @@
 			path = Modal;
 			sourceTree = "<group>";
 		};
-		51E1FF8F1B3BD88200B2E169 /* View */ = {
+		51E1FF9C1B3BDA2600B2E169 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				51E1FF9D1B3BDA2600B2E169 /* Parse */,
 			);
-			path = View;
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		51E1FF9D1B3BDA2600B2E169 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				51E1FF9E1B3BDA2600B2E169 /* Bolts.framework */,
+				51E1FF9F1B3BDA2600B2E169 /* Parse.framework */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		51E1FFA81B3BE45200B2E169 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				51E1FFA91B3BE47200B2E169 /* 01_recent */,
+				51E1FFAA1B3BE47200B2E169 /* 02_group */,
+				51E1FFAB1B3BE47200B2E169 /* 03_people */,
+				51E1FFAC1B3BE47200B2E169 /* 04_settings */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		51E1FFA91B3BE47200B2E169 /* 01_recent */ = {
+			isa = PBXGroup;
+			children = (
+				51E1FFAD1B3BE49700B2E169 /* RecentView.h */,
+				51E1FFAE1B3BE49700B2E169 /* RecentView.m */,
+				51E1FFAF1B3BE49700B2E169 /* RecentView.xib */,
+			);
+			path = 01_recent;
+			sourceTree = "<group>";
+		};
+		51E1FFAA1B3BE47200B2E169 /* 02_group */ = {
+			isa = PBXGroup;
+			children = (
+				51E1FFB91B3BE6BA00B2E169 /* GroupView.h */,
+				51E1FFBA1B3BE6BA00B2E169 /* GroupView.m */,
+				51E1FFBB1B3BE6BA00B2E169 /* GroupView.xib */,
+			);
+			path = 02_group;
+			sourceTree = "<group>";
+		};
+		51E1FFAB1B3BE47200B2E169 /* 03_people */ = {
+			isa = PBXGroup;
+			children = (
+				51E1FFBE1B3BE6C700B2E169 /* PeopleView.h */,
+				51E1FFBF1B3BE6C700B2E169 /* PeopleView.m */,
+				51E1FFC01B3BE6C700B2E169 /* PeopleView.xib */,
+			);
+			path = 03_people;
+			sourceTree = "<group>";
+		};
+		51E1FFAC1B3BE47200B2E169 /* 04_settings */ = {
+			isa = PBXGroup;
+			children = (
+				51E1FFC31B3BE6D400B2E169 /* SettingView.h */,
+				51E1FFC41B3BE6D400B2E169 /* SettingView.m */,
+				51E1FFC51B3BE6D400B2E169 /* SettingView.xib */,
+			);
+			path = 04_settings;
+			sourceTree = "<group>";
+		};
+		51E1FFB51B3BE57400B2E169 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				51E1FFB61B3BE57400B2E169 /* NavigationController.h */,
+				51E1FFB71B3BE57400B2E169 /* NavigationController.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		51E1FFC91B3BF52100B2E169 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				51E1FFCA1B3BFA3400B2E169 /* ChatView.h */,
+				51E1FFCB1B3BFA3400B2E169 /* ChatView.m */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		80FA5935FD0F00FAECFFE8E9 /* Pods */ = {
@@ -185,6 +279,9 @@
 		9C6198E13E3B597127F120C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51E1FFA61B3BDA7500B2E169 /* Accounts.framework */,
+				51E1FFA41B3BDA6E00B2E169 /* Social.framework */,
+				51E1FFA21B3BDA5A00B2E169 /* libsqlite3.dylib */,
 				B0356017868C725CBD565206 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -272,9 +369,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519CE2791B3BBC23007D17E9 /* Main.storyboard in Resources */,
+				51E1FFC71B3BE6D400B2E169 /* SettingView.xib in Resources */,
+				51E1FFBD1B3BE6BA00B2E169 /* GroupView.xib in Resources */,
 				519CE27E1B3BBC23007D17E9 /* LaunchScreen.xib in Resources */,
 				519CE27B1B3BBC23007D17E9 /* Images.xcassets in Resources */,
+				51E1FFB11B3BE49700B2E169 /* RecentView.xib in Resources */,
+				51E1FFC21B3BE6C700B2E169 /* PeopleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,12 +425,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51E1FFCC1B3BFA3400B2E169 /* ChatView.m in Sources */,
+				51E1FFB01B3BE49700B2E169 /* RecentView.m in Sources */,
 				519CE2731B3BBC23007D17E9 /* AppDelegate.m in Sources */,
 				519CE2701B3BBC23007D17E9 /* main.m in Sources */,
-				51E1FF921B3BD8A500B2E169 /* RecentViewController.m in Sources */,
-				51E1FF9B1B3BD8C000B2E169 /* PeopleViewController.m in Sources */,
-				51E1FF981B3BD8B600B2E169 /* GroupViewController.m in Sources */,
-				51E1FF951B3BD8AE00B2E169 /* SettingsViewController.m in Sources */,
+				51E1FFC11B3BE6C700B2E169 /* PeopleView.m in Sources */,
+				51E1FFB81B3BE57400B2E169 /* NavigationController.m in Sources */,
+				51E1FFBC1B3BE6BA00B2E169 /* GroupView.m in Sources */,
+				51E1FFC61B3BE6D400B2E169 /* SettingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,14 +455,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		519CE2771B3BBC23007D17E9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				519CE2781B3BBC23007D17E9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		519CE27C1B3BBC23007D17E9 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -459,6 +553,10 @@
 			baseConfigurationReference = 7B5C2E905E3FEA68864455DC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/chatme/Libraries/Parse",
+				);
 				INFOPLIST_FILE = chatme/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -472,6 +570,10 @@
 			baseConfigurationReference = 014EF63902BF94A2DDA38FEB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/chatme/Libraries/Parse",
+				);
 				INFOPLIST_FILE = chatme/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
