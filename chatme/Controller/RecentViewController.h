@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RecentViewController.h
 //  chatme
 //
 //  Created by Le Ngoc Giang on 6/25/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RecentViewController : UIViewController
 
 @end
-

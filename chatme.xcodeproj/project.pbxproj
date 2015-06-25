@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		519CE2701B3BBC23007D17E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 519CE26F1B3BBC23007D17E9 /* main.m */; };
 		519CE2731B3BBC23007D17E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 519CE2721B3BBC23007D17E9 /* AppDelegate.m */; };
-		519CE2761B3BBC23007D17E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519CE2751B3BBC23007D17E9 /* ViewController.m */; };
 		519CE2791B3BBC23007D17E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519CE2771B3BBC23007D17E9 /* Main.storyboard */; };
 		519CE27B1B3BBC23007D17E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519CE27A1B3BBC23007D17E9 /* Images.xcassets */; };
 		519CE27E1B3BBC23007D17E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519CE27C1B3BBC23007D17E9 /* LaunchScreen.xib */; };
 		519CE28A1B3BBC23007D17E9 /* chatmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 519CE2891B3BBC23007D17E9 /* chatmeTests.m */; };
+		51E1FF921B3BD8A500B2E169 /* RecentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FF911B3BD8A500B2E169 /* RecentViewController.m */; };
+		51E1FF951B3BD8AE00B2E169 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FF941B3BD8AE00B2E169 /* SettingsViewController.m */; };
+		51E1FF981B3BD8B600B2E169 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FF971B3BD8B600B2E169 /* GroupViewController.m */; };
+		51E1FF9B1B3BD8C000B2E169 /* PeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1FF9A1B3BD8C000B2E169 /* PeopleViewController.m */; };
 		8A4DEEB5397CCA9DA560CA4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356017868C725CBD565206 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -34,14 +37,20 @@
 		519CE26F1B3BBC23007D17E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		519CE2711B3BBC23007D17E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		519CE2721B3BBC23007D17E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		519CE2741B3BBC23007D17E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		519CE2751B3BBC23007D17E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		519CE2781B3BBC23007D17E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		519CE27A1B3BBC23007D17E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		519CE27D1B3BBC23007D17E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		519CE2831B3BBC23007D17E9 /* chatmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		519CE2881B3BBC23007D17E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		519CE2891B3BBC23007D17E9 /* chatmeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatmeTests.m; sourceTree = "<group>"; };
+		51E1FF901B3BD8A500B2E169 /* RecentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentViewController.h; sourceTree = "<group>"; };
+		51E1FF911B3BD8A500B2E169 /* RecentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentViewController.m; sourceTree = "<group>"; };
+		51E1FF931B3BD8AE00B2E169 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		51E1FF941B3BD8AE00B2E169 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		51E1FF961B3BD8B600B2E169 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		51E1FF971B3BD8B600B2E169 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
+		51E1FF991B3BD8C000B2E169 /* PeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleViewController.h; sourceTree = "<group>"; };
+		51E1FF9A1B3BD8C000B2E169 /* PeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleViewController.m; sourceTree = "<group>"; };
 		7B5C2E905E3FEA68864455DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B0356017868C725CBD565206 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,13 +97,12 @@
 		519CE26C1B3BBC23007D17E9 /* chatme */ = {
 			isa = PBXGroup;
 			children = (
+				51E1FF8C1B3BD88200B2E169 /* Controller */,
+				51E1FF8E1B3BD88200B2E169 /* Modal */,
+				51E1FF8F1B3BD88200B2E169 /* View */,
+				51E1FF8D1B3BD88200B2E169 /* Helper */,
 				519CE2711B3BBC23007D17E9 /* AppDelegate.h */,
 				519CE2721B3BBC23007D17E9 /* AppDelegate.m */,
-				519CE2741B3BBC23007D17E9 /* ViewController.h */,
-				519CE2751B3BBC23007D17E9 /* ViewController.m */,
-				519CE2771B3BBC23007D17E9 /* Main.storyboard */,
-				519CE27A1B3BBC23007D17E9 /* Images.xcassets */,
-				519CE27C1B3BBC23007D17E9 /* LaunchScreen.xib */,
 				519CE26D1B3BBC23007D17E9 /* Supporting Files */,
 			);
 			path = chatme;
@@ -103,6 +111,9 @@
 		519CE26D1B3BBC23007D17E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				519CE2771B3BBC23007D17E9 /* Main.storyboard */,
+				519CE27A1B3BBC23007D17E9 /* Images.xcassets */,
+				519CE27C1B3BBC23007D17E9 /* LaunchScreen.xib */,
 				519CE26E1B3BBC23007D17E9 /* Info.plist */,
 				519CE26F1B3BBC23007D17E9 /* main.m */,
 			);
@@ -124,6 +135,42 @@
 				519CE2881B3BBC23007D17E9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51E1FF8C1B3BD88200B2E169 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51E1FF901B3BD8A500B2E169 /* RecentViewController.h */,
+				51E1FF911B3BD8A500B2E169 /* RecentViewController.m */,
+				51E1FF931B3BD8AE00B2E169 /* SettingsViewController.h */,
+				51E1FF941B3BD8AE00B2E169 /* SettingsViewController.m */,
+				51E1FF961B3BD8B600B2E169 /* GroupViewController.h */,
+				51E1FF971B3BD8B600B2E169 /* GroupViewController.m */,
+				51E1FF991B3BD8C000B2E169 /* PeopleViewController.h */,
+				51E1FF9A1B3BD8C000B2E169 /* PeopleViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		51E1FF8D1B3BD88200B2E169 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		51E1FF8E1B3BD88200B2E169 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		51E1FF8F1B3BD88200B2E169 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		80FA5935FD0F00FAECFFE8E9 /* Pods */ = {
@@ -278,9 +325,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519CE2761B3BBC23007D17E9 /* ViewController.m in Sources */,
 				519CE2731B3BBC23007D17E9 /* AppDelegate.m in Sources */,
 				519CE2701B3BBC23007D17E9 /* main.m in Sources */,
+				51E1FF921B3BD8A500B2E169 /* RecentViewController.m in Sources */,
+				51E1FF9B1B3BD8C000B2E169 /* PeopleViewController.m in Sources */,
+				51E1FF981B3BD8B600B2E169 /* GroupViewController.m in Sources */,
+				51E1FF951B3BD8AE00B2E169 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
