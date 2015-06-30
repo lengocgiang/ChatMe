@@ -9,6 +9,9 @@
 #import "RecentView.h"
 #import "AppConstant.h"
 
+#import "RecentCell.h"
+#import "ChatView.h"
+
 @interface RecentView ()
 {
     NSMutableArray *recents;
@@ -46,10 +49,19 @@
     [self.tableView reloadData];
 }
 
+- (void)actionChat:(NSString *)groudID
+{
+    /*
+        ChatView *chatView = [ChatView alloc]initWithGroup:groupID];
+        chatView.
+        [self.navigationController pushViewController:chatView animated:YES]
+     */
+}
+
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return [recents count];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -59,25 +71,28 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    static NSString *Cell = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Cell];
-    
-    if (!cell)
-    {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:Cell];
-    }
-    cell.textLabel.text = @"giang";
-    
-    return cell;
-    
+    RecentCell *cell = (RecentCell*)[tableView dequeueReusableCellWithIdentifier:@"RecentCell"];
+
+    [cell bindData:recents[indexPath.row]];
+     
+     return cell;
 }
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+
 
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    PFObject *recent = recents[indexPath.row];
+    
+    [self actionChat:recent[PF_RECENT_GROUPID]];
 }
 
 @end

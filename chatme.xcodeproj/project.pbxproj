@@ -12,6 +12,9 @@
 		519CE27B1B3BBC23007D17E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519CE27A1B3BBC23007D17E9 /* Images.xcassets */; };
 		519CE27E1B3BBC23007D17E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519CE27C1B3BBC23007D17E9 /* LaunchScreen.xib */; };
 		519CE28A1B3BBC23007D17E9 /* chatmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 519CE2891B3BBC23007D17E9 /* chatmeTests.m */; };
+		51B40A2C1B42876700E8076E /* recent.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B40A2B1B42876700E8076E /* recent.m */; };
+		51B40A2F1B429BD600E8076E /* push.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B40A2E1B429BD600E8076E /* push.m */; };
+		51B40A321B42A0FE00E8076E /* PFUser+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B40A311B42A0FE00E8076E /* PFUser+Util.m */; };
 		51E1FFA01B3BDA2600B2E169 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1FF9E1B3BDA2600B2E169 /* Bolts.framework */; };
 		51E1FFA11B3BDA2600B2E169 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1FF9F1B3BDA2600B2E169 /* Parse.framework */; };
 		51E1FFA31B3BDA5A00B2E169 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1FFA21B3BDA5A00B2E169 /* libsqlite3.dylib */; };
@@ -56,6 +59,12 @@
 		519CE2831B3BBC23007D17E9 /* chatmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		519CE2881B3BBC23007D17E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		519CE2891B3BBC23007D17E9 /* chatmeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatmeTests.m; sourceTree = "<group>"; };
+		51B40A2A1B42876700E8076E /* recent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recent.h; sourceTree = "<group>"; };
+		51B40A2B1B42876700E8076E /* recent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recent.m; sourceTree = "<group>"; };
+		51B40A2D1B429BD600E8076E /* push.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = push.h; sourceTree = "<group>"; };
+		51B40A2E1B429BD600E8076E /* push.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = push.m; sourceTree = "<group>"; };
+		51B40A301B42A0FE00E8076E /* PFUser+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFUser+Util.h"; sourceTree = "<group>"; };
+		51B40A311B42A0FE00E8076E /* PFUser+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFUser+Util.m"; sourceTree = "<group>"; };
 		51E1FF9E1B3BDA2600B2E169 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		51E1FF9F1B3BDA2600B2E169 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		51E1FFA21B3BDA5A00B2E169 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -287,6 +296,12 @@
 		51E1FFD41B3C0EB100B2E169 /* backend */ = {
 			isa = PBXGroup;
 			children = (
+				51B40A2A1B42876700E8076E /* recent.h */,
+				51B40A2B1B42876700E8076E /* recent.m */,
+				51B40A2D1B429BD600E8076E /* push.h */,
+				51B40A2E1B429BD600E8076E /* push.m */,
+				51B40A301B42A0FE00E8076E /* PFUser+Util.h */,
+				51B40A311B42A0FE00E8076E /* PFUser+Util.m */,
 			);
 			path = backend;
 			sourceTree = "<group>";
@@ -459,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B40A2C1B42876700E8076E /* recent.m in Sources */,
 				51E1FFD81B3C0EC900B2E169 /* converted.m in Sources */,
 				51E1FFCC1B3BFA3400B2E169 /* ChatView.m in Sources */,
 				51E1FFD01B3C0A2200B2E169 /* RecentCell.m in Sources */,
@@ -466,7 +482,9 @@
 				519CE2731B3BBC23007D17E9 /* AppDelegate.m in Sources */,
 				519CE2701B3BBC23007D17E9 /* main.m in Sources */,
 				51E1FFC11B3BE6C700B2E169 /* PeopleView.m in Sources */,
+				51B40A321B42A0FE00E8076E /* PFUser+Util.m in Sources */,
 				51E1FFB81B3BE57400B2E169 /* NavigationController.m in Sources */,
+				51B40A2F1B429BD600E8076E /* push.m in Sources */,
 				51E1FFBC1B3BE6BA00B2E169 /* GroupView.m in Sources */,
 				51E1FFC61B3BE6D400B2E169 /* SettingView.m in Sources */,
 			);

@@ -7,7 +7,13 @@
 //
 
 #import "JSQMessagesViewController.h"
+#import <JSQMessages.h>
 
 @interface ChatView : JSQMessagesViewController
+<
+    UIActionSheetDelegate
+>
+
+- (id)initWith:(NSString*)groupdId_;
 
 @end
