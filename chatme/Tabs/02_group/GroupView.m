@@ -5,6 +5,12 @@
 //  Created by Le Ngoc Giang on 6/25/15.
 //  Copyright (c) 2015 giangle. All rights reserved.
 //
+#import <Parse/Parse.h>
+#import "PFUser+Util.h"
+
+#import "AppConstant.h"
+#import "common.h"
+#import "recent.h"
 
 #import "GroupView.h"
 
@@ -31,6 +37,17 @@
     [super viewDidLoad];
     
 }
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    if ([PFUser currentUser] != nil)
+    {
+        // [self loadRecent]
+    }
+    else LoginUser(self);
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

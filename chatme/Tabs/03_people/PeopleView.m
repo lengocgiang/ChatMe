@@ -5,6 +5,12 @@
 //  Created by Le Ngoc Giang on 6/25/15.
 //  Copyright (c) 2015 giangle. All rights reserved.
 //
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
+
+#import "AppConstant.h"
+#import "common.h"
+#import "recent.h"
 
 #import "PeopleView.h"
 
@@ -24,14 +30,20 @@
     }
     return self;
 }
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    if ([PFUser currentUser] != nil)
+    {
+ 
+    }
+    else LoginUser(self);
 }
 
 - (void)didReceiveMemoryWarning {

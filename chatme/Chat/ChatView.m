@@ -222,7 +222,11 @@
         text = @"[Text message]";
         filePicture = [PFFile fileWithName:@"picture.jpg" data:UIImageJPEGRepresentation(picture, 0.6)];
         [filePicture saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if (error != nil){UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Network error." message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            if (error != nil)
+            {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Network error."
+                                                            message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [alert show];
             }
         }];

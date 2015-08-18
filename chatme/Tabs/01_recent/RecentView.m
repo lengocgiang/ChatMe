@@ -8,6 +8,8 @@
 
 #import "RecentView.h"
 #import "AppConstant.h"
+#import "common.h"
+#import "recent.h"
 
 #import "RecentCell.h"
 #import "ChatView.h"
@@ -34,7 +36,17 @@
 #pragma mark - View Controller
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+}
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    if ([PFUser currentUser] != nil)
+    {
+        // [self loadRecent]
+    }
+    else LoginUser(self);
 }
 
 - (void)didReceiveMemoryWarning {
